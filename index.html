@@ -1,154 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-' '
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SK RESUME</title>
+    <meta name="description" content="Kishore S - Frontend Developer Portfolio">
+    <title>Kishore S | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">Portfolio</h2>>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="#home">Portfolio<span>.</span></a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
             <ul class="nav-links">
-
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="projects">projects</a>
-                </li>
-                <li>
-                    <a href="contact">contact</a>
-                </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-
         </nav>
     </header>
-    <!-- hero section start -->
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <h1>I'm KISHORE <span>S</span></h1>
-            <h2>I build responsive website</h2>
 
-            <p>I create responsive and attractive website using HTML ,CSS,JAVASCRIPT andv React
-            </p>
-            <a href="#" class="btn">Download Resume</a>
-        </div>
-        <div class="hero-image">
-            <img src="IMG-20260907-WA0053.jpg" alt="KISHORE.S">
-        </div>
-    </section>
-    <!-- hero section end -->
-
-    <!-- about section start -->
-    <section id="about" class="about">
-        <h2>About me</h2>
-        <p>I am a passionate Frontend Developer who enjoys creating beautiful and responsive websites. I am currently learning Full Stack Web Development.</p>
-    </section>
-    <!-- about section end -->
-
-
-    <!-- skills section start -->
-    <section id="skills">
-        <h2>My Skills</h2>
-        <div class="skills-container">
-
-            <div class="skill">HTML</div>
-
-            <div class="skill">CSS</div>
-
-            <div class="skill">JavaScript</div>
-
-            <div class="skill">Bootstrap</div>
-
-            <div class="skill">React</div>
-
-            <div class="skill">Node.js</div>
-
-            <div class="skill">MySQL</div>
-
-        </div>
-    </section>
-    <!-- skills section end -->
-    <!-- Projects section start -->
-    <section id="projects">
-
-        <h2>My Projects</h2>
-
-        <div class="project-container">
-
-            <div class="project-card">
-                <h3>Travel Website</h3>
-
-                <p>Responsive travel website using HTML, CSS and JavaScript.</p>
-
-                <button>View Project</button>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+                <h1>I'm KISHORE <span>S</span></h1>
+                <h2> I build responsive websites</h2>
+                <p class="hero-description">I create responsive and attractive websites using HTML, CSS, JavaScript, and React. I am also learning full-stack web development.</p>
+                <div class="hero-actions">
+                    <a href="KISHORE.S_RESUME.pdf" class="btn" download>Download Resume</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
             </div>
-
-            <div class="project-card">
-                <h3>Perfume Website</h3>
-
-                <p>Modern landing page with animations.</p>
-
-                <button>View Project</button>
+            <div class="hero-image">
+                <img src="IMG-20260907-WA0053.jpg" alt="Portrait of Kishore S" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+                <div class="image-fallback" aria-hidden="true">KS</div>
             </div>
+        </section>
 
-            <div class="project-card">
-                <h3>Calculator</h3>
+        <section id="about" class="about section">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h2>About Me</h2>
+            <p>I am a passionate aspiring Frontend Developer who enjoys creating beautiful, user-friendly, and responsive websites. I am currently learning Full Stack Web Development and improving my skills by building projects.</p>
+        </section>
 
-                <p>Simple calculator using JavaScript.</p>
-
-                <button>View Project</button>
+        <section id="skills" class="section">
+            <p class="eyebrow">WHAT I WORK WITH</p>
+            <h2>My Skills</h2>
+            <div class="skills-container">
+              <div class="skills-container">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Bootstrap</div>
+    <div class="skill">React</div>
+    <div class="skill">Node.js</div>
+    <div class="skill">MySQL</div>
+    <div class="skill">Java</div>
+    <div class="skill">C++</div>
+    <div class="skill">C</div>
+    <div class="skill">Python</div>
+</div>
             </div>
+        </section>
 
-        </div>
+        <section id="projects" class="section">
+            <p class="eyebrow">SOME THINGS I'VE BUILT</p>
+            <h2>My Projects</h2>
+            <div class="project-container">
+                <article class="project-card">
+                    <div class="project-number">01</div>
+                    <h3>Travel Website</h3>
+                    <p>A responsive travel website concept built with HTML, CSS, and JavaScript.</p>
+                    <a class="project-link" href="#contact" aria-label="Ask me about the Travel Website project">Ask about project <span>↗</span></a>
+                </article>
+                <article class="project-card">
+                    <div class="project-number">02</div>
+                    <h3>Perfume Website</h3>
+                    <p>A modern product landing page concept with a clean layout and animations.</p>
+                    <a class="project-link" href="#contact" aria-label="Ask me about the Perfume Website project">Ask about project <span>↗</span></a>
+                </article>
+                <article class="project-card">
+                    <div class="project-number">03</div>
+                    <h3>Calculator</h3>
+                    <p>A simple calculator project for practicing JavaScript logic and interactions.</p>
+                    <a class="project-link" href="#contact" aria-label="Ask me about the Calculator project">Ask about project <span>↗</span></a>
+                </article>
+            </div>
+        </section>
 
-    </section>
-    <!-- project section end -->
+        <section id="contact" class="section contact-section">
+            <p class="eyebrow">LET'S TALK</p>
+            <h2>Contact Me</h2>
+            <p class="contact-intro">Have a project idea or opportunity? Send me a message.</p>
 
-    <!-- Contact section start-->
-    <section id="contact">
+            <!-- Replace YOUR_FORM_ID with your actual Formspree form ID. -->
+            <form id="contact-form" action="https://formspree.io/f/xaeqlwjy" method="POST">
+                <label for="visitor-name">Your Name</label>
+                <input id="visitor-name" type="text" name="name" placeholder="Enter your name" autocomplete="name" required>
 
-        <h2>Contact Me</h2>
+                <label for="visitor-email">Your Email</label>
+                <input id="visitor-email" type="email" name="email" placeholder="Enter your email" autocomplete="email" required>
 
-        <form>
+                <label for="visitor-message">Your Message</label>
+                <textarea id="visitor-message" name="message" rows="5" placeholder="Write your message..." required></textarea>
 
-            <input type="text" placeholder="Your Name">
+                <button class="btn submit-btn" type="submit">Send Message</button>
+                <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+            <p class="form-note">Note: The contact form will send messages after you connect your own Formspree form ID.</p>
+        </section>
+    </main>
 
-            <input type="email" placeholder="Your Email">
-
-            <textarea rows="5" placeholder="Your Message"></textarea>
-
-            <button type="submit">Send Message</button>
-
-        </form>
-
-    </section>
-    <!-- contact section  end -->
-
-    <!-- Footer section start-->
-    <footer>
-
-        <p>© 2026 KISHORE S | All Rights Reserved.</p>
-        <!-- Footer section end -->
-
+    <footer class="site-footer">
+        <p>© <span id="year">2026</span> KISHORE S | All Rights Reserved.</p>
+        <a href="#home">Back to top ↑</a>
     </footer>
 </body>
 
 </html>
-<style>
-    /* Google Font */
-    
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-</style>
-<script src="script.js"></script>
